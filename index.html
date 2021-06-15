@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <!--head tag stores all the libraries and the links to the necessary files you need for the project-->
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBb8_ZsRrDsFQ38f2ewGqEX6fCpKyLD0BU",
+        authDomain: "multicar-game-ed181.firebaseapp.com",
+        databaseURL: "https://multicar-game-ed181-default-rtdb.firebaseio.com",
+        projectId: "multicar-game-ed181",
+        storageBucket: "multicar-game-ed181.appspot.com",
+        messagingSenderId: "184574232990",
+        appId: "1:184574232990:web:7a78ae6c91e4befe722e8f"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+<!--we use script tags to mention the source of the javascript or other script files we use-->
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <!--body contains the actual content of the page - here our content is within sketch.js-->
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
